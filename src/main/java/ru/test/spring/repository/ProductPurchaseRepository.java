@@ -11,7 +11,7 @@ import ru.test.spring.model.dto.ProductPurchaseDto;
 public interface ProductPurchaseRepository {
 
 
-    ResponseEntity<PurchaseResponse> buyProduct(ProductPurchaseDto productPurchaseDto);
+    PurchaseResponse buyProduct(ProductPurchaseDto productPurchaseDto);
 
     void updateUserBalance(int finalUserBalance);
 

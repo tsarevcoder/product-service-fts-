@@ -23,6 +23,6 @@ public class PurchaseProductRestController {
 
     @GetMapping("/buy")
     public ResponseEntity<PurchaseResponse> buyProduct(@RequestBody ProductPurchaseDto productPurchaseDto) {
-        return productPurchaseRepository.buyProduct(productPurchaseDto);
+        return ResponseEntity.ok(productPurchaseRepository.buyProduct(productPurchaseDto));
     }
 }
